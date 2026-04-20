@@ -1,0 +1,88 @@
+:root {
+  /* Type Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* Font Families */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 24px;  /* Softer cards */
+  --radius-full: 9999px; /* Fluid pills */
+
+  /* Theme: Light (Ocean Breeze) - DEFAULT NOW */
+  --bg-color: #F0F9FF; /* Soft off-white sand */
+  --surface-color: #FFFFFF;
+  --surface-color-hover: #E0F2FE;
+  
+  --primary-color: #0EA5E9; /* Ocean Blue */
+  --primary-color-hover: #0284C7;
+  --primary-color-light: #38BDF8; /* Sky Blue */
+
+  --accent-color: #14B8A6; /* Coastal Mint */
+  --accent-color-hover: #0D9488;
+  
+  --text-primary: #0F172A;
+  --text-muted: #64748B;
+  
+  /* Very subtle borders -> "No line rule" */
+  --border-color: #E0F2FE;
+  --divider-color: rgba(14, 165, 233, 0.1); 
+
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+  --color-info: #38BDF8; /* Sky Blue */
+  --color-success: #14B8A6; /* Mint */
+
+  /* Light, diffuse blue-tinted shadows */
+  --shadow-sm: 0 4px 14px 0 rgba(14, 165, 233, 0.08);
+  --shadow-md: 0 10px 24px -4px rgba(14, 165, 233, 0.12), 0 4px 10px -4px rgba(14, 165, 233, 0.08);
+  --shadow-lg: 0 20px 40px -8px rgba(14, 165, 233, 0.15), 0 10px 16px -8px rgba(14, 165, 233, 0.1);
+
+  /* Deep Ocean Dark Mode Fallback */
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --bg-color: #08121C; /* Deep ocean depth */
+  --surface-color: #0C1E2F;
+  --surface-color-hover: #132D48;
+  
+  --primary-color: #38BDF8;
+  --primary-color-hover: #7DD3FC;
+  --primary-color-light: #0EA5E9;
+
+  --accent-color: #4ADE80; 
+  --accent-color-hover: #22C55E;
+  
+  --text-primary: #F0F9FF;
+  --text-muted: #94A3B8;
+  
+  --border-color: #1E3A5F;
+  --divider-color: rgba(56, 189, 248, 0.1);
+
+  --shadow-sm: 0 4px 14px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 24px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 40px -8px rgba(0, 0, 0, 0.6);
+
+  color-scheme: dark;
+}

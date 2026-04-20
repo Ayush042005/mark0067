@@ -1,0 +1,11 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+    'build',
+    '--build-arg', 'VITE_GOOGLE_MAPS_KEY=${_VITE_GOOGLE_MAPS_KEY}',
+    '--build-arg', 'VITE_GEMINI_KEY=${_VITE_GEMINI_KEY}',
+    '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/smart-stadium-companion:latest',
+    '.'
+  ]
+images:
+- 'us-central1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/smart-stadium-companion:latest'

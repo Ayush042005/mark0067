@@ -1,0 +1,95 @@
+.map-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.map-toolbar {
+  position: absolute;
+  bottom: var(--spacing-6);
+  right: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  z-index: 10;
+}
+
+.map-action-btn {
+  width: 56px; /* slightly larger */
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  background: var(--ocean-gradient-subtle, var(--surface-color));
+}
+
+.map-action-btn:active {
+  transform: scale(0.95);
+}
+
+.user-marker {
+  width: 32px;
+  height: 32px;
+  background: radial-gradient(var(--primary-color-hover), var(--primary-color));
+  color: white;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  box-shadow: var(--shadow-md);
+}
+
+.user-marker span {
+  font-size: 18px;
+}
+
+.friend-marker {
+  width: 36px;
+  height: 36px;
+  color: white;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  border: 3px solid white;
+  box-shadow: var(--shadow-md);
+}
+
+.poi-marker {
+  width: 32px;
+  height: 32px;
+  color: white;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s;
+}
+
+.poi-marker:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.primary-btn {
+  background: var(--ocean-gradient, var(--primary-color));
+  color: white;
+  padding: var(--spacing-4);
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.primary-btn:hover { 
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.full-width { width: 100%; }

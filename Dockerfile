@@ -1,0 +1,17 @@
+FROM node:20-slim
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install --legacy-peer-deps
+
+COPY . .
+ARG VITE_GOOGLE_MAPS_KEY
+ARG VITE_GEMINI_KEY
+ENV VITE_GOOGLE_MAPS_KEY=$VITE_GOOGLE_MAPS_KEY
+ENV VITE_GEMINI_KEY=$VITE_GEMINI_KEY
+RUN npm run build
+
+EXPOSE 8080
+
+CMD ["npm", "start"]
